@@ -86,5 +86,5 @@
 	</dependencies>
 	<name>ps2v2 census model</name>
 	<groupId>de.dirdra.census</groupId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 </project>

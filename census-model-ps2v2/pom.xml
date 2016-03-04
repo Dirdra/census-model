@@ -11,9 +11,6 @@
 			<resource>
 				<directory>src/main/resources</directory>
 			</resource>
-			<resource>
-				<directory>target/generated-sources/java</directory>
-			</resource>
 		</resources>
 		<testResources>
 			<testResource>
@@ -40,9 +37,9 @@
 							<sources>
 								<source>src/main/resources/xsd</source>
 							</sources>
-							<clearOutputDir>true</clearOutputDir>
+							<clearOutputDir>false</clearOutputDir>							
 							<schemaDirectory>src/main/resources/xsd</schemaDirectory>
-							<outputDirectory>target/generated-sources/java</outputDirectory>
+							<outputDirectory>src/main/java</outputDirectory>
 							<packageName>de.dirdra.census.model.ps2v2</packageName>
 						</configuration>
 					</execution>
@@ -88,6 +85,6 @@
 		</dependency>
 	</dependencies>
 	<name>ps2v2 census model</name>
-	<groupId>de.brainius.dgc</groupId>
+	<groupId>de.dirdra.census</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 </project>

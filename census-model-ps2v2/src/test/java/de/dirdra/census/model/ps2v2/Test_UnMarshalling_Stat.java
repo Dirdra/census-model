@@ -16,7 +16,7 @@ import org.junit.runners.Parameterized.Parameters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.dirdra.census.model.ps2v2.Constants;
+import de.dirdra.census.model.ps2v2.util.Constants;
 
 @RunWith(Parameterized.class)
 public class Test_UnMarshalling_Stat {

@@ -42,7 +42,7 @@
 							</sources>
 							<clearOutputDir>false</clearOutputDir>							
 							<schemaDirectory>src/main/resources/xsd</schemaDirectory>
-							<outputDirectory>target/main/java</outputDirectory>
+							<outputDirectory>src/main/java</outputDirectory>
 							<packageName>de.dirdra.census.model.ps2v2</packageName>
 						</configuration>
 					</execution>

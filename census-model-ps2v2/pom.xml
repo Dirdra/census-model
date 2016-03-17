@@ -9,6 +9,9 @@
 				<directory>src/main/java</directory>
 			</resource>
 			<resource>
+				<directory>target/main/java</directory>
+			</resource>
+			<resource>
 				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
@@ -39,7 +42,7 @@
 							</sources>
 							<clearOutputDir>false</clearOutputDir>							
 							<schemaDirectory>src/main/resources/xsd</schemaDirectory>
-							<outputDirectory>src/main/java</outputDirectory>
+							<outputDirectory>target/main/java</outputDirectory>
 							<packageName>de.dirdra.census.model.ps2v2</packageName>
 						</configuration>
 					</execution>

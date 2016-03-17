@@ -32,7 +32,7 @@
 				<executions>
 					<execution>
 						<id>generate-source-stat</id>
-						<phase>generate-sources</phase>
+						<phase>compile</phase>
 						<goals>
 							<goal>xjc</goal>
 						</goals>

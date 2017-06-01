@@ -44,6 +44,9 @@
 							<schemaDirectory>src/main/resources/xsd</schemaDirectory>
 							<outputDirectory>src/main/java</outputDirectory>
 							<packageName>de.dirdra.census.model.ps2v2</packageName>
+							<xjbSources>
+								<xjbSource>src/main/resources/bindings/binding.xjb</xjbSource>
+							</xjbSources>
 						</configuration>
 					</execution>
 				</executions>

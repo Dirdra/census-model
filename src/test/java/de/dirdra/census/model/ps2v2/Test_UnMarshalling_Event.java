@@ -179,19 +179,19 @@ public class Test_UnMarshalling_Event extends CamelTestSupport {
 		
 		assertEquals("event", response.getService());
 		assertEquals("serviceMessage", response.getType());
-		assertEquals("5428010618015189713", response.getPayload().getAttackerCharacterId());
-		assertEquals((Integer)26103, response.getPayload().getAttackerFireModeId());
-		assertEquals((Integer)15, response.getPayload().getAttackerLoadoutId());
-		assertEquals((Integer)0, response.getPayload().getAttackerVehicleId());
-		assertEquals((Integer)26003, response.getPayload().getAttackerWeaponId());
-		assertEquals("5428168624838258657", response.getPayload().getCharacterId());
-		assertEquals((Integer)6, response.getPayload().getCharacterLoadoutId());
-		assertEquals("Death", response.getPayload().getEventName());
-		assertEquals((Integer)1, response.getPayload().getIsHeadshot());
+		assertEquals("5428010618015189713", response.getPayload().getAttacker_Character_Id());
+		assertEquals((Integer)26103, response.getPayload().getAttacker_Fire_Mode_Id());
+		assertEquals((Integer)15, response.getPayload().getAttacker_Loadout_Id());
+		assertEquals((Integer)0, response.getPayload().getAttacker_Vehicle_Id());
+		assertEquals((Integer)26003, response.getPayload().getAttacker_Weapon_Id());
+		assertEquals("5428168624838258657", response.getPayload().getCharacter_Id());
+		assertEquals((Integer)6, response.getPayload().getCharacter_Loadout_Id());
+		assertEquals("Death", response.getPayload().getEvent_Name());
+		assertEquals((Integer)1, response.getPayload().getIs_Headshot());
 		assertEquals(1392056954L, response.getPayload().getTimestamp());
-		assertEquals((Integer)0, response.getPayload().getVehicleId());
-		assertEquals(1, response.getPayload().getWorldId());
-		assertEquals((Integer)2, response.getPayload().getZoneId());
+		assertEquals((Integer)0, response.getPayload().getVehicle_Id());
+		assertEquals(1, response.getPayload().getWorld_Id());
+		assertEquals((Integer)2, response.getPayload().getZone_Id());
 		
 		LOG.info("repsonse > {}", response);		
 	}
@@ -204,10 +204,10 @@ public class Test_UnMarshalling_Event extends CamelTestSupport {
 		
 		assertEquals("event", response.getService());
 		assertEquals("serviceMessage", response.getType());
-		assertEquals("5428057349740067905", response.getPayload().getCharacterId());
-		assertEquals("PlayerLogin", response.getPayload().getEventName());
+		assertEquals("5428057349740067905", response.getPayload().getCharacter_Id());
+		assertEquals("PlayerLogin", response.getPayload().getEvent_Name());
 		assertEquals(1397251287L, response.getPayload().getTimestamp());
-		assertEquals(1, response.getPayload().getWorldId());
+		assertEquals(1, response.getPayload().getWorld_Id());
 		
 		LOG.info("repsonse > {}", response);		
 	}

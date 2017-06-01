@@ -67,10 +67,20 @@
 		</xsd:sequence>
 	</xsd:complexType>
 	
+	<xsd:complexType name="subscriptionType">
+		<xsd:sequence>
+			<xsd:element name="characterCount" type="xsd:int" minOccurs="0"></xsd:element>
+			<xsd:element name="eventNames" minOccurs="0" maxOccurs="unbounded" type="xsd:string"></xsd:element>
+			<xsd:element name="logicalAndCharactersWithWorlds" type="xsd:boolean" minOccurs="0"></xsd:element>
+			<xsd:element name="worlds" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
 	<xsd:complexType name="eventResponseType">
 		<xsd:sequence>
 			<xsd:element name="payload" type="payloadType"></xsd:element>
 			<xsd:element name="online" type="onlineType"></xsd:element>
+			<xsd:element name="subscription" type="subscriptionType" minOccurs="0"></xsd:element>
 			
 			<xsd:element name="service" type="xsd:string"></xsd:element>
 			<xsd:element name="type" type="xsd:string"></xsd:element>
